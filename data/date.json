@@ -1,0 +1,119 @@
+{
+  "personal": {
+    "name":"Nahuel",
+    "description":"descripcion del portfoliio",
+    "soy":"Desarrollador Web Fullstack",
+    "img_banner":"https://www.adobe.com/es/express/create/media_127a4cd0c28c2753638768caf8967503d38d01e4c.jpeg?width=400&format=jpeg&optimize=medium"
+  },
+  "experinece": [
+    {
+      "title_exp": "Trabajo 1",
+      "description_exp": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "img_exp": "https://www.adobe.com/es/express/create/media_127a4cd0c28c2753638768caf8967503d38d01e4c.jpeg?width=400&format=jpeg&optimize=medium",
+      "id": 1
+    },
+    {
+      "title_exp": "Trabajo 2",
+      "description_exp": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "img_exp": "https://www.adobe.com/es/express/create/media_127a4cd0c28c2753638768caf8967503d38d01e4c.jpeg?width=400&format=jpeg&optimize=medium",
+      "id": 2
+    },
+    {
+      "title_exp": "Trabajo 3",
+      "description_exp": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "img_exp": "https://www.adobe.com/es/express/create/media_127a4cd0c28c2753638768caf8967503d38d01e4c.jpeg?width=400&format=jpeg&optimize=medium",
+      "id": 3
+    }
+  ],
+  "education": [
+    {
+      "title_std": "estudio 1",
+      "description_std": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "img_std": "https://www.adobe.com/es/express/create/media_127a4cd0c28c2753638768caf8967503d38d01e4c.jpeg?width=400&format=jpeg&optimize=medium",
+      "startDate": "2020",
+      "finishDate": "2022",
+      "id": 1
+    },
+    {
+      "title_std": "estudio 1",
+      "description_std": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "img_std": "https://www.adobe.com/es/express/create/media_127a4cd0c28c2753638768caf8967503d38d01e4c.jpeg?width=400&format=jpeg&optimize=medium",
+      "startDate": "2020",
+      "finishDate": "2022",
+      "id": 2
+    },
+    {
+      "title_std": "estudio 1",
+      "description_std": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "img_std": "https://www.adobe.com/es/express/create/media_127a4cd0c28c2753638768caf8967503d38d01e4c.jpeg?width=400&format=jpeg&optimize=medium",
+      "startDate": "2020",
+      "finishDate": "2022",
+      "id": 3
+    }
+  ],
+  "skills": [
+    {
+      "title_sk": "HTML",
+      "value_sk": 50,
+      "id": 1
+    },
+    {
+      "title_sk": "HTML",
+      "value_sk": 30,
+      "id": 2
+    },
+    {
+      "title_sk": "HTML",
+      "value_sk": 20,
+      "id": 3
+    },
+    {
+      "title_sk": "HTML",
+      "value_sk": 50,
+      "id": 4
+    },
+    {
+      "title_sk": "HTML",
+      "value_sk": 80,
+      "id": 5
+    },
+    {
+      "text": "dsafsdaf",
+      "id": 6
+    }
+  ],
+  "projects": [
+    {
+      "title_pj": "project 1",
+      "description_pj": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "img_pj": "https://px6vg4ekvl21gtxs836x5jyx-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/hero-img@1-1.png",
+      "link_web": "#",
+      "link_github": "#",
+      "id": 1
+    },
+    {
+      "title_pj": "project 1",
+      "description_pj": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "img_pj": "https://px6vg4ekvl21gtxs836x5jyx-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/hero-img@1-1.png",
+      "link_web": "#",
+      "link_github": "#",
+      "id": 2
+    },
+    {
+      "title_pj": "project 1",
+      "description_pj": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "img_pj": "https://px6vg4ekvl21gtxs836x5jyx-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/hero-img@1-1.png",
+      "link_web": "#",
+      "link_github": "#",
+      "id": 3
+    },
+    {
+      "title_pj": "project 1",
+      "description_pj": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "img_pj": "https://px6vg4ekvl21gtxs836x5jyx-wpengine.netdna-ssl.com/wp-content/uploads/2020/11/hero-img@1-1.png",
+      "link_web": "#",
+      "link_github": "#",
+      "id": 4
+    }
+  ]
+}

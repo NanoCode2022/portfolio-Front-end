@@ -1,0 +1,49 @@
+   <!-- experiencias -->
+   <div class="container mt-5 border">
+    <h1>Experiencias</h1>
+    <i *ngIf="login" class="fa-solid fa-pencil text-end container-fluid"></i>
+    <div class="container-fluid mt-5 row">
+
+      <div *ngFor="let experience of porfolioExp" class="card mb-3" style="max-width: 540px; border: 0px;">
+        <div class="row g-0">
+          <div class="col-md-4 text-center">
+            <img [src]="experience.img_exp" class="img-fluid img_exp" alt="logo">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ experience.title_exp }}</h5>
+              <p class="card-text">{{ experience.description_exp }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- 
+      <div class="card mb-3" style="max-width: 540px; border: 0px;">
+        <div class="row g-0">
+          <div class="col-md-4 text-center">
+            <img src="https://www.adobe.com/es/express/create/media_127a4cd0c28c2753638768caf8967503d38d01e4c.jpeg?width=400&format=jpeg&optimize=medium" class="img-fluid img_exp" alt="logo">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Golder View</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="card mb-3" style="max-width: 540px; border: 0px;">
+        <div class="row g-0">
+          <div class="col-md-4 text-center">
+            <img src="https://www.adobe.com/es/express/create/media_127a4cd0c28c2753638768caf8967503d38d01e4c.jpeg?width=400&format=jpeg&optimize=medium" class="img-fluid img_exp" alt="logo">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Golder View</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      </div>
+    </div>

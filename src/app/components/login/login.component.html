@@ -1,0 +1,16 @@
+ <div class="container-fluid container_formulario">
+   <form class="formulario"  (ngSubmit)="onSubmit()" [formGroup]="form">
+      <div class="container_input">
+        <label>Email</label>
+        <input type="email" name="email" formControlName="email">
+        <div *ngIf="this.form.get('email')?.touched && this.form.get('email')?.errors" class="alert alert-dark text-center" role="alert">Email Incorrect</div>
+      </div>
+      <div class="container_input">
+        <label>Password</label>
+        <input type="password" name="password" formControlName="password">
+        <div *ngIf="this.form.get('password')?.touched && this.form.get('password')?.errors?.['minlength']" class="alert alert-dark text-center" role="alert">Password be longer {{form.get('password')?.errors?.['minlength']?.requiredLength}} the characters</div>
+      </div>
+      <input type="submit" name="submit" value="Iniciar Sesion" [disabled]="this.form.invalid" class="btn btn-secondary">
+      <p (click)="onClick()" class="text-center label_volver">Volver</p>
+   </form>
+ </div>

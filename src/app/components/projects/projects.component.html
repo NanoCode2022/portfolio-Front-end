@@ -1,0 +1,19 @@
+    <!-- Proyectos -->
+    <div class="container text-center mt-5">
+      <h1>Proyectos</h1>
+      <i *ngIf="login" class="fa-solid fa-pencil text-end container-fluid"></i>
+      <div class="container-fluid d-flex row gap-4 mt-3 justify-content-center">
+
+        <div *ngFor="let project of porfolioPj" class="card" style="width: 18rem;">
+          <img [src]="project.img_pj" class="card-img-top" alt="proyecto">
+          <div class="card-body">
+            <h5 class="card-title">{{project.title_pj}}</h5>
+            <p class="card-text">{{project.description_pj}}</p>
+            <a [href]="project.link_web" class="btn btn-primary" style="margin-right: 6px;">Visitar Web</a>
+            <a [href]="project.link_github" class="btn btn-primary">GitHub</a>
+          </div>
+        </div>
+
+        </div>
+
+      </div>

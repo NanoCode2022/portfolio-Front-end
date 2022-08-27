@@ -1,0 +1,10 @@
+    <!-- habilidades/skill-->
+    <div class="container text-center mt-5">
+      <h1>Habilidades</h1>
+      <div class="container-fluid mt-3 d-flex row gap-4">
+        <div *ngFor="let skill of porfolioSk" class="container-fluid">
+          <label>{{skill.title_sk}}</label>
+          <input type="range" min="0" max="100" value="{{skill.value_sk}}" class="range_skill">
+        </div>
+      </div>
+    </div>
