@@ -1,0 +1,11 @@
+    <!-- habilidades/skill-->
+    <div class="container text-center mt-5">
+      <h1>Habilidades</h1>
+      <div class="container-fluid mt-3 d-flex row gap-4">
+        <div *ngFor="let skill of porfolioSk" class="container-fluid">
+          <label class="fw-semibold p-2">{{skill.title.toUpperCase()}}</label>
+          <input type="range" disabled min="0" max="100" value="{{skill.value}}" class="range_skill">
+          <i *ngIf="login" class="fa-solid fa-x p-2" (click)="deleteSk(skill.id)"></i>
+        </div>
+      </div>
+    </div>

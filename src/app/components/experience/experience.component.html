@@ -1,0 +1,21 @@
+   <!-- experiencias -->
+   <div class="container mt-5">
+    <h1>Experiencias</h1>
+    <div class="container-fluid mt-5 row">
+
+      <div *ngFor="let experience of porfolioExp" class="card mb-3 border" style="max-width: 540px; border: 0px;">
+        <div class="row g-0 min_card">
+          <div class="col-md-4 text-center card_img">
+            <img [src]="experience.picture" class="img-fluid img_exp" alt="logo">
+          </div>
+          <div class="col-md-8 text-end second_card">
+            <i *ngIf="login" class="fa-solid fa-x cursor-pointer p-2" (click)="onDelete(experience.id)"></i>
+            <div class="card-body">
+              <h5 class="card-title">{{ experience.title }}</h5>
+              <p class="card-text">{{ experience.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>

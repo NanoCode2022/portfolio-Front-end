@@ -1,0 +1,27 @@
+.second_card{
+    background-color: #000;
+    color: #fff;
+}
+
+.card{
+    padding: 0;
+    margin: 14px;
+}
+
+.card_img{
+    padding: 12px 12px;
+    background-color: #333333;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+@media only screen and (max-width: 750px) {
+    .card-body{
+        text-align: center;
+    }
+
+    .card_img{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
+    }
+}

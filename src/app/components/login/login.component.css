@@ -1,0 +1,30 @@
+.container_formulario{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.formulario{
+  border-radius: 1rem;
+  border: 1px solid black;
+  padding: 30px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.container_input{
+  display: flex;
+  flex-direction: column;
+}
+
+.label_volver{
+  cursor: pointer;
+}
+
+.label_volver:hover{
+  color: blue;
+}

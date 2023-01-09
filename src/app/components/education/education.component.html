@@ -1,0 +1,53 @@
+    
+    <!-- educacion -->
+    <div class="container mt-5 ">
+      <h1>Educacion</h1>
+      <div class="container-fluid mt-5 row">
+
+        <div *ngFor="let education of porfolioEdc" class="card mb-3" style="max-width: 540px; border: 0px;">
+          <div class="row g-0">
+            <div class="col-md-4 text-center card_img">
+              <img [src]="education.picture" class="img-fluid" alt="logo">
+            </div>
+            <div class="col-md-8 text-end second_card">
+              <i *ngIf="login" class="fa-solid fa-x p-2" (click)="deleteEdc(education.id)"></i>
+              <div class="card-body">
+                <h5 class="card-title">{{education.title}}</h5>
+                <p class="card-text">{{education.description}}</p>
+                <p class="card-text"><small class="">{{education.startDate}}</small> - <small class="">{{education.finishDate}}</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="card mb-3" style="max-width: 540px; border: 0px;">
+          <div class="row g-0">
+            <div class="col-md-4 text-center">
+              <img src="https://www.adobe.com/es/express/create/media_127a4cd0c28c2753638768caf8967503d38d01e4c.jpeg?width=400&format=jpeg&optimize=medium" class="img-fluid" alt="logo">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Golder View</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">2020</small> - <small class="text-muted">2022</small></p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="card mb-3" style="max-width: 540px; border: 0px;">
+          <div class="row g-0">
+            <div class="col-md-4 text-center">
+              <img src="https://www.adobe.com/es/express/create/media_127a4cd0c28c2753638768caf8967503d38d01e4c.jpeg?width=400&format=jpeg&optimize=medium" class="img-fluid" alt="logo">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Golder View</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">2020</small> - <small class="text-muted">2022</small></p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        </div>
+      </div>

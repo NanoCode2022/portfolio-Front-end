@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+.altura{
+  height: calc(100vh - 56px);
+}
+
+.description_sb{
+  width: 550px;
+}
+.img_exp{
+  border-radius: 100%;
+  width: 7rem;
+}
+.range_skill{
+  width: 50%;
+  height: 3px;
+}
+
+@media (max-width: 530px){
+  .foto{
+    height: 250px;
+    width: 350px;
+  }
+  .description_sb{
+    width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+.margin{
+    margin-top: 50px;
+}
+
+.input_admin_text{
+    width: 50%;
+    margin-bottom: 8px;
+    border: 0;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: #e7e7e7;
+    outline: none;
+    border-radius: 6px;
+}
+
+.btn{
+    width: 150px;
+    background-color: #696969;
+    border: 0;
+
+}
+
+
+.btn:hover{
+    background-color: #051937;
+}
+
+.main_container{
+    width: 100%;
+    height: 100%;
+    color: #ddd9d9;
+   background-color: black;
+}
+
+.btnVolver{
+    background-color: #696969;
+    color: #fff;
+}
+
+@media only screen and (max-width: 750px) {
+    .main_container{
+        
+    }
+}

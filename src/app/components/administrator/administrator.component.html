@@ -1,0 +1,58 @@
+<div class="main_container">
+  <button class="btnVolver" (click)="volver()" >Volver</button>
+  <div class="container  d-flex flex-column gap-5">
+    <div>
+      <p>Add Acerca de</p>
+      <form class="d-flex flex-column" [formGroup]="formAD" method="Put">
+        <input class="input_admin_text" type="text" placeholder="Description" name="descriptionAD" formControlName="descriptionAD">
+        <input type="button" value="Save Acerca de"[disabled]="this.formAD.invalid" class="btn btn-primary" (click)="onSubmitAD()">
+      </form>
+    </div>
+  
+  
+    <div>
+      <p>Add Experinece</p>
+      <form class="d-flex flex-column">
+        <input class="input_admin_text" type="text" placeholder="Title" (change)="getTitlExp(name.value)" #name >
+        <input class="input_admin_text" type="text" placeholder="Description" (change)="getDescriptionExp(description.value)" #description >
+        <input type="file" (change)="uploadFile($event)">
+        <input type="button" [disabled]="desactivarBtnExp()" (click)="onSubmitExp()" value="Save Experience" class="btn btn-primary">
+      </form>
+    </div>
+  
+    
+    <div>
+      <p>Add Education</p>
+      <form class="d-flex flex-column">
+        <input class="input_admin_text" type="text" placeholder="Title" (change)="getTitlEs(title.value)" #title>
+        <input class="input_admin_text" type="text" placeholder="Description" (change)="getDescriptionEs(descriptionEs.value)" #descriptionEs>
+        <input type="file" (change)="uploadFilEs($event)">
+        <input class="input_admin_text" type="number" min="1980" max="2050" step="1"  placeholder="Date start" (change)="getstartEs(start.value)" #start>
+        <input class="input_admin_text" type="number" min="1980" max="2050" step="1"  placeholder="Date finish" (change)="getfinishEs(finish.value)" #finish>
+        <input type="button" [disabled]="desactivarBtnEd()" value="Save Education" class="btn btn-primary" (click)="onSubmitEs()">
+      </form>
+    </div>
+    <div>
+
+      <div>
+        <p>Add Skills</p>
+        <form class="d-flex flex-column" [formGroup]="formSk" method="post">
+          <input class="input_admin_text" type="text" placeholder="title" name="titleSk" formControlName="titleSk">
+          <input class="input_admin_text" type="number" placeholder="value" min="0" max="100" name="valueSk" formControlName="valueSk">
+          <input type="button" [disabled]="desactivarBtn()" value="Save Skill"[disabled]="this.formSk.invalid" class="btn btn-primary" (click)="onSubmitSk()">
+        </form>
+      </div>
+  
+  
+      <p class="margin">Add Projects</p>
+      <form class="d-flex flex-column">
+        <input class="input_admin_text" type="text" placeholder="Title" (change)="getTitlePj(titlePj.value)" #titlePj >
+        <input class="input_admin_text" type="text" placeholder="Description" (change)="getDescriptionPj(descriptionPj.value)" #descriptionPj>
+        <input type="file" (change)="uploadFilePj($event)">
+        <input class="input_admin_text" type="text" placeholder="Link Web" (change)="getLinkWeb(linkWeb.value)" #linkWeb>
+        <input class="input_admin_text" type="text" placeholder="Link Github" (change)="getLinkGit(linkGit.value)" #linkGit>
+        <input type="button" [disabled]="desactivarPj()" value="Save Projects" class="btn btn-primary" (click)="onSubmitPj()">
+      </form>
+    </div>
+  </div>
+</div>
