@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Education } from 'src/app/interfaces/app.interface';
 import { MiPortfolioService } from 'src/app/service/mi-portfolio.service';
+
 
 @Component({
   selector: 'app-administrator',
@@ -25,7 +25,10 @@ export class AdministratorComponent implements OnInit {
   }
 
 
+
+
 // AD
+$enviadoAD!:boolean
   dataAD(){
     return this.fb.group({
       descriptionAD:['',[Validators.required,Validators.minLength(15)]]
@@ -44,7 +47,7 @@ export class AdministratorComponent implements OnInit {
 
   onSubmitAD(){
     
-    this._myService.putAD(this.formAD.value.descriptionAD).subscribe(data => console.log(data))
+    this._myService.putAD(this.formAD.value.descriptionAD).subscribe(()=>location.reload())
 
 
   }
@@ -77,7 +80,7 @@ export class AdministratorComponent implements OnInit {
       title: formData.get('title_exp'),
       description: formData.get('description_exp'),
       picture: formData.get('img_exp')
-    }).subscribe(data => console.log(data))
+    }).subscribe(()=>location.reload())
 
     
   }
@@ -138,7 +141,7 @@ export class AdministratorComponent implements OnInit {
     };
 
 
-    this._myService.postEs(this.formulario).subscribe()
+    this._myService.postEs(this.formulario).subscribe(()=>location.reload())
   }
 
   desactivarBtnEd(){
@@ -157,6 +160,8 @@ export class AdministratorComponent implements OnInit {
   descriptionPj!:string
   linkWeb!:string 
   linkGit!:string
+
+  loadpj!:boolean
 
   getTitlePj(title:string){
     this.titlePj = title
@@ -190,7 +195,7 @@ export class AdministratorComponent implements OnInit {
       picture:formData.get('img_pj'),
       linkWeb:formData.get('web'),
       linkGithub:formData.get('git')
-    }).subscribe()
+    }).subscribe(()=> {location.reload()})
   }
   
   desactivarPj(){
@@ -222,9 +227,9 @@ export class AdministratorComponent implements OnInit {
     };
 
     this._myService.postSk(this.formularioSk).subscribe(res=> {
-      if(res){
-        console.log('enviado')
-      }
+      this.formSk.value.titleSk = '';
+      this.formSk.value.valueSk = '';
+      location.reload()
     })
   }
 

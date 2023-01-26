@@ -23,7 +23,9 @@ export class ProjectsComponent implements OnInit {
 
   reloadPj(){
     this.datosPorfolio.getProjects().subscribe(res =>{ 
-      this.porfolioPj = res})
+      this.porfolioPj = res
+
+    })
   }
 
   onDeletePj(id:number){

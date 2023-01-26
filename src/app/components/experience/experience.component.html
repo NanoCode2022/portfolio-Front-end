@@ -1,6 +1,13 @@
    <!-- experiencias -->
    <div class="container mt-5">
     <h1>Experiencias</h1>
+    <div *ngIf="activate" class="containerEditor">
+      <form [formGroup]="formExp" method="Put">
+        <input type="text" placeholder="Title" name="title" formControlName="title">
+        <input type="text" placeholder="Description" name="description" formControlName="description">
+        <input type="button" value="Edit Experinece"[disabled]="this.formExp.invalid" class="btn btn-primary" (click)="onSubmitExp()">
+      </form>
+    </div>
     <div class="container-fluid mt-5 row">
 
       <div *ngFor="let experience of porfolioExp" class="card mb-3 border" style="max-width: 540px; border: 0px;">
@@ -9,7 +16,9 @@
             <img [src]="experience.picture" class="img-fluid img_exp" alt="logo">
           </div>
           <div class="col-md-8 text-end second_card">
+            <i *ngIf="login" class="fa-solid fa-pencil m-2" (click)="onEdit(experience.id)"></i>
             <i *ngIf="login" class="fa-solid fa-x cursor-pointer p-2" (click)="onDelete(experience.id)"></i>
+            
             <div class="card-body">
               <h5 class="card-title">{{ experience.title }}</h5>
               <p class="card-text">{{ experience.description }}</p>

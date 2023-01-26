@@ -18,3 +18,10 @@
 .text2{
     font-size: 40px!important;
 }
+
+.loading{
+    position: absolute;
+}
+.iconLoading{
+    width: 200px;
+}

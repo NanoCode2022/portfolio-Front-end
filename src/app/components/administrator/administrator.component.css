@@ -37,8 +37,17 @@
     color: #fff;
 }
 
-@media only screen and (max-width: 750px) {
-    .main_container{
-        
-    }
+
+.alert{
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    padding: 5px;
+    text-align: center;
+    color: #0d4200;
+    background-color: white;
 }

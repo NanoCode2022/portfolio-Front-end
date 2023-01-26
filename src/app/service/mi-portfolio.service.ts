@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { map, Observable, Subject } from 'rxjs';
-import { AcercaDe, AD, Credentials, Education, Experience, Project } from '../interfaces/app.interface';
+import { AcercaDe, AD, Credentials, Education, Exp, Experience, Project } from '../interfaces/app.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -9,8 +9,7 @@ import { AcercaDe, AD, Credentials, Education, Experience, Project } from '../in
 export class MiPortfolioService {
 
   login:Boolean
-  apiURL = 'https://portfolio-backend-3s3m.onrender.com';
-  isLoading$ = new Subject<boolean>();
+  apiURL = 'https://portfolio-backend-b4mh.onrender.com';
 
   constructor(private http:HttpClient) {
     this.login = this.logueado();
@@ -99,6 +98,10 @@ export class MiPortfolioService {
     // put
     putAD(body:AD):Observable<AD>{
       return this.http.put<AD>(`${this.apiURL}/persona/editar/1?description=${body}`,body);
+    }
+
+    putExp(body:Exp,id:number,title:String,description:String):Observable<Exp>{
+      return this.http.put<Exp>(`${this.apiURL}/experiencia/editar/${id}?title=${title}&description=${description}`,body)
     }
 
 

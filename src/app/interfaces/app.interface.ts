@@ -16,6 +16,11 @@ export interface Experience{
   id:number
 }
 
+export interface Exp{
+  description:String
+  title:String,
+}
+
 export interface Education{
   title:string,
   description:string,

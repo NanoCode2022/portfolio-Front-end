@@ -8,14 +8,16 @@ import { tap } from 'rxjs/operators'
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  loading:boolean
   miPorfolio:any;
-  constructor(private datosPortfolio:MiPortfolioService) { }
+  constructor(private datosPortfolio:MiPortfolioService) { this.loading = true}
 
   ngOnInit(): void {
     this.datosPortfolio.getDatosPersonal().subscribe(data => {
       this.miPorfolio = data[0] 
-
+      this.loading = false
     });
+  
   }
 
 }
